@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { gsap } from 'gsap';
 import GreenCircleAnim from '@components/general/GreenCircleAnim';
 import './Header.css';
 
@@ -16,6 +17,17 @@ const Header = () => {
         const intervalId = setInterval(() => {
             setLocalTime(new Date().toLocaleTimeString());
         }, 1000);
+
+        gsap.fromTo('.Header-Item-Container', {
+            opacity: 0,
+            y: -20
+        }, {
+            duration: 0.8,
+            opacity: 1,
+            y: 0,
+            stagger: 0.2,
+            ease: 'power2.out'
+        });
         return () => clearInterval(intervalId);
     }, []);
 
