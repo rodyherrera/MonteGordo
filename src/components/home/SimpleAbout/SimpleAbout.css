@@ -1,0 +1,48 @@
+.Simple-About-Container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 5rem;
+}
+
+.Simple-About-Left-Container,
+.Simple-About-Right-Container{
+    width: 50%;
+}
+
+.Simple-About-Left{
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+
+.Simple-About-Right{
+    max-width: 70%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 768px){
+    .Simple-About-Container{
+        flex-direction: column;
+        height: 35rem;
+        padding: 1.5rem;
+    }
+
+    .Simple-About-Left{
+        font-size: 1.5rem;
+    }
+
+    .Simple-About-Right{
+        max-width: unset;
+        font-size: 1.2rem;
+    }
+
+    .Simple-About-Left-Container,
+    .Simple-About-Right-Container{
+        width: 100%;
+    }
+}

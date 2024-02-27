@@ -1,0 +1,63 @@
+.Lets-Create-Container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+}
+
+.Lets-Create-Header-Container{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #141414;
+}
+
+.Lets-Create-Footer-Container{
+    display: flex;
+    width: 100%;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #141414;
+}
+
+.Lets-Create-Header-Title{
+    font-size: 5vw;
+    font-weight: 450;
+}
+
+.Lets-Create-Header-Icon{
+    font-size: 4rem;
+}
+
+.Lets-Create-Author,
+.Lets-Create-Country{
+    font-weight: 450;
+    display: flex;
+    line-height: 1.5;
+    font-size: 1.2vw;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+    .Lets-Create-Container{
+        height: 18rem;
+    }  
+
+    .Lets-Create-Author,
+    .Lets-Create-Country{
+        font-size: .6rem;
+    }
+
+    .Lets-Create-Header-Title{
+        font-size: 1.5rem;
+    }
+
+    .Lets-Create-Header-Icon{
+        font-size: 3rem;
+    }
+}
