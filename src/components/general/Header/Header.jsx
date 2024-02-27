@@ -21,17 +21,19 @@ const Header = () => {
 
     return (
         <header className='Header-Container'>
-            {headerItems.map(([ top, bottom, Icon ], index) => (
-                <section className='Header-Item-Container' key={index}>
-                    <article className='Header-Item-Top-Container'>
-                        <span className='Header-Item-Top'>{top}</span>
+            <section className='Header-Wrapper-Container'>
+                {headerItems.map(([ top, bottom, Icon ], index) => (
+                    <article className='Header-Item-Container' key={index}>
+                        <div className='Header-Item-Top-Container'>
+                            <span className='Header-Item-Top'>{top}</span>
+                        </div>
+                        <div className='Header-Item-Bottom-Container'>
+                            {Icon && <Icon />}
+                            <span className='Header-Item-Bottom'>{bottom}</span>
+                        </div>
                     </article>
-                    <article className='Header-Item-Bottom-Container'>
-                        {Icon && <Icon />}
-                        <span className='Header-Item-Bottom'>{bottom}</span>
-                    </article>
-                </section>
-            ))}
+                ))}
+            </section>
         </header>
     );
 };

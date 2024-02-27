@@ -1,8 +1,16 @@
 #Home-Page-Main{
+    height: calc(100% - 4rem);
+}
+
+#Home-Page-Main > section:not(#Home-Page-Create-Container){
+    background-color: #141414;
+}
+
+#Home-Page-Welcome-Container{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: calc(100% - 4rem);
 }
 
 #Home-Page-Footer-Container{
@@ -39,7 +47,158 @@
     margin: 0 4rem;
 }
 
+#Home-Page-About-Container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 5rem;
+}
+
+#Home-Page-About-Left-Container,
+#Home-Page-About-Right-Container{
+    width: 50%;
+}
+
+#Home-Page-About-Left{
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+
+#Home-Page-About-Right{
+    max-width: 70%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+#Home-Page-Projects-Header-Title{
+    opacity: .5;
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.Home-Page-Project-Container{
+    border-top: 1px solid #d9d9d925;
+    border-right: unset;
+    border-left: unset;
+    padding: 3rem 5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+#Home-Page-Projects-Container{
+    padding: 0 2.5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.Home-Page-Project-Icon-Container{
+    font-size: 5vw;
+    display: flex;
+    opacity: .1;
+    transition: opacity .2s linear;
+}
+
+.Home-Page-Project-Container:hover .Home-Page-Project-Icon-Container{
+    opacity: 1;
+}
+
+.Home-Page-Project-Title{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#Home-Page-Create-Container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+}
+
+#Home-Page-Create-Header-Container{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #141414;
+}
+
+#Home-Page-Create-Header-Icon{
+    font-size: 4rem;
+}
+
+#Home-Page-Create-Header-Title{
+    font-size: 5vw;
+    font-weight: 450;
+}
+
+#Home-Page-Create-Footer-Container{
+    display: flex;
+    width: 100%;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #141414;
+}
+
+#Home-Page-Create-Author,
+#Home-Page-Create-Country{
+    font-weight: 450;
+    display: flex;
+    line-height: 1.5;
+    font-size: 1.2vw;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 768px){
+    #Home-Page-About-Container{
+        flex-direction: column;
+        height: 35rem;
+        padding: 1.5rem;
+    }
+
+    #Home-Page-Projects-Header-Title{
+        font-size: .9rem;
+    }
+
+    #Home-Page-Projects-Container{
+        padding: 2rem 1.5rem 1rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    #Home-Page-About-Left-Container,
+    #Home-Page-About-Right-Container{
+        width: 100%;
+    }
+
+    .Home-Page-Project-Container{
+        padding: 1.5rem 0;
+    }
+
+    #Home-Page-About-Left{
+        font-size: 1.5rem;
+    }
+
+    #Home-Page-About-Right{
+        max-width: unset;
+        font-size: 1.2rem;
+    }
+
     #Home-Page-Main{
         height: calc(100% - 6rem);
     }
@@ -50,5 +209,21 @@
 
     #Home-Page-Author .rfm-marquee::after{
         margin: 0 1rem;
+    }
+
+    #Home-Page-Create-Header-Icon{
+        font-size: 3rem;
+    }
+
+    #Home-Page-Create-Header-Title{
+        font-size: 1.5rem;
+    }
+
+    #Home-Page-Create-Container{
+        height: 18rem;
+    }
+
+    #Home-Page-Create-Author, #Home-Page-Create-Country{
+        font-size: .6rem;
     }
 }
