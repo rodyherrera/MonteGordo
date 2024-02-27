@@ -1,0 +1,54 @@
+#Home-Page-Main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 4rem);
+}
+
+#Home-Page-Footer-Container{
+    padding: 0 2.5rem 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#Home-Page-Footer-Arrow-Container{
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+}
+
+#Home-Page-Footer-Talent{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 300;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+#Home-Page-Author{
+    font-size: 12vw;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+#Home-Page-Author .rfm-marquee::after{
+    content: '—';
+    margin: 0 4rem;
+}
+
+@media screen and (max-width: 768px){
+    #Home-Page-Main{
+        height: calc(100% - 6rem);
+    }
+
+    #Home-Page-Footer-Container{
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    #Home-Page-Author .rfm-marquee::after{
+        margin: 0 1rem;
+    }
+}

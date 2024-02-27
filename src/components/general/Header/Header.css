@@ -1,0 +1,38 @@
+.Header-Container{
+    border-bottom: 1px solid #d9d9d925;
+    margin: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.Header-Container > .Header-Item-Container:last-child .Header-Item-Bottom-Container{
+    justify-content: flex-end;
+}
+
+.Header-Item-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.Header-Item-Bottom,
+.Header-Item-Top{
+    font-size: .9rem;
+}
+
+.Header-Item-Bottom-Container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .Header-Container{
+        margin: 0 1.5rem;
+    }
+
+    .Header-Container > .Header-Item-Container:not(:last-child):not(:first-child){
+        display: none;
+    }
+}

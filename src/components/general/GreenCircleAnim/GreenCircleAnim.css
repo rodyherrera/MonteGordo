@@ -1,0 +1,14 @@
+@keyframes Green-Circle-Anim{
+    0%{ opacity: 0 }
+    30%{ opacity: 1 }
+    70%{ opacity: 1 }
+    100%{ opacity: 0 }
+}
+
+.Green-Circle-Anim-Container .Green-Circle{
+    background-color: #4cd137;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    animation: Green-Circle-Anim 1s linear infinite;
+}
