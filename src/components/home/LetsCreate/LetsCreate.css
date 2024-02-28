@@ -6,6 +6,11 @@
     background-color: #d9d9d9;
 }
 
+.Lets-Create-Header-Container,
+.Lets-Create-Footer-Container{
+    opacity: 0;
+}
+
 .Lets-Create-Header-Container{
     display: flex;
     margin-top: 3rem;

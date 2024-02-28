@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { useInView } from 'react-intersection-observer';
 import GreenCircleAnim from '@components/general/GreenCircleAnim';
 import './Header.css';
 
 const Header = () => {
+    const [isInViewRef, isInView] = useInView({ threshold: 0.5 });
+    const [animationPlayed, setAnimationPlayed] = useState(false);
     const [localTime, setLocalTime] = useState(new Date().toLocaleTimeString());
     const headerItems = [
         ['Rodolfo', 'Herrera H.'],
@@ -14,10 +17,7 @@ const Header = () => {
     ];
 
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            setLocalTime(new Date().toLocaleTimeString());
-        }, 1000);
-
+        if(!isInView || animationPlayed) return;
         gsap.fromTo('.Header-Item-Container', {
             opacity: 0,
             y: -20
@@ -28,11 +28,18 @@ const Header = () => {
             stagger: 0.2,
             ease: 'power2.out'
         });
+        setAnimationPlayed(true);
+    }, [isInView, animationPlayed]);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setLocalTime(new Date().toLocaleTimeString());
+        }, 1000);
         return () => clearInterval(intervalId);
     }, []);
 
     return (
-        <header className='Header-Container'>
+        <header className='Header-Container' ref={isInViewRef}>
             <section className='Header-Wrapper-Container'>
                 {headerItems.map(([ top, bottom, Icon ], index) => (
                     <article className='Header-Item-Container' key={index}>

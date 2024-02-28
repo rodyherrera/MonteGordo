@@ -5,7 +5,10 @@ import SimpleAbout from '@components/home/SimpleAbout';
 import DevelopedProjects from '@components/home/DevelopedProjectList';
 import { gsap } from 'gsap';
 import { BsArrowDownRight } from 'react-icons/bs';
+import { ScrollTrigger } from 'gsap/all';
 import './Home.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
     const authorRef = useRef(null);
@@ -18,7 +21,11 @@ const HomePage = () => {
         }, {
             duration: 1.5,
             opacity: 1,
-            ease: 'power2.out'
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '#Home-Page-Footer-Container',
+                start: 'top 80%'
+            }
         });
 
         // Title Sequence
@@ -30,7 +37,11 @@ const HomePage = () => {
             y: 0,
             opacity: 1,
             stagger: 0.15,
-            ease: 'back.out(1.2)'
+            ease: 'back.out(1.2)',
+            scrollTrigger: {
+                trigger: '#Home-Page-Footer-Container',
+                start: 'top 80%'
+            }
         });
     }, []);
 

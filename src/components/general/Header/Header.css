@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 768px){
+    .Header-Container{
+        padding: 0 1.5rem;
+    }
+
     .Header-Wrapper-Container > .Header-Item-Container:not(:last-child):not(:first-child){
         display: none;
     }

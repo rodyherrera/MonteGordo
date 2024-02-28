@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './LoadingScreen.css';
 
-const LoadingScreen = ({}) => {
+const LoadingScreen = () => {
     const loadingScreenRef = useRef(null);
 
     useEffect(() => {
