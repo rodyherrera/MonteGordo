@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import SocialMedia from '@components/general/SocialMedia';
 import './SimpleAbout.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -40,6 +41,7 @@ const SimpleAbout = () => {
     return (
         <section className='Simple-About-Container'>
             <article className='Simple-About-Left-Container'>
+                <SocialMedia />
                 <p className='Simple-About-Left' ref={leftRef}>Boosting brands in the digital age. Let's shake things up and redefine the game. No tricks, always staying ahead, period.</p>
             </article>
             <article className='Simple-About-Right-Container'>

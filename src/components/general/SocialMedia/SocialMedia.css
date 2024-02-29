@@ -1,0 +1,15 @@
+.Social-Media-Container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.Social-Media-Icon-Container{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.Social-Media-Icon-Container:hover{
+    opacity: .8;
+    transform: scale(.95);
+}

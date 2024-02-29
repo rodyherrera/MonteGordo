@@ -6,6 +6,13 @@
     background-color: #141414;
 }
 
+#Home-Page-Header-Container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2.5rem;
+}
+
 #Home-Page-Welcome-Container{
     height: 100%;
     display: flex;
