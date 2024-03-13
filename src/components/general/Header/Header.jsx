@@ -13,7 +13,7 @@ const Header = () => {
         ['Based in', 'Chile, Talca'],
         ['Local Time', localTime + ' UTC - 3'],
         ['Current Status', 'Available', GreenCircleAnim],
-        ['hello@rodyherrera.com', '+56 9 6420 3112']
+        ["Let's Talk", 'hello@rodyherrera.com']
     ];
 
     useEffect(() => {

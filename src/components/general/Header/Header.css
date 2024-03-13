@@ -36,6 +36,10 @@
         padding: 0 1.5rem;
     }
 
+    .Header-Wrapper-Container > .Header-Item-Container:last-child{
+        text-align: right;
+    }
+
     .Header-Wrapper-Container > .Header-Item-Container:not(:last-child):not(:first-child){
         display: none;
     }
