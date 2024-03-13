@@ -24,7 +24,7 @@ const HomePage = () => {
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: '#Home-Page-Footer-Container',
-                start: 'top 80%'
+                start: 'top 90%'
             }
         });
 
@@ -40,7 +40,7 @@ const HomePage = () => {
             ease: 'back.out(1.2)',
             scrollTrigger: {
                 trigger: '#Home-Page-Footer-Container',
-                start: 'top 80%'
+                start: 'top 90%'
             }
         });
     }, []);
