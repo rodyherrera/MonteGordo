@@ -42,6 +42,22 @@ const HomePage = () => {
                 start: 'top 90%'
             }
         });
+
+        // Arrow
+        gsap.fromTo('#Home-Page-Footer-Arrow-Container', {
+            y: 0,
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 0.7,
+            y: 10,
+            ease: 'elastic.out(1, 0.5)',
+            scrollTrigger: {
+                trigger: '#Home-Page-Footer-Container',
+                start: 'top 90%'
+            },
+            yoyo: true
+        });
     }, []);
 
     return (
