@@ -56,6 +56,10 @@
 }
 
 @media screen and (max-width: 768px){
+    #Home-Page-Footer-Talent{
+        font-size: 6vw;
+    }
+
     #Home-Page-Main{
         height: calc(100% - 6rem);
     }
