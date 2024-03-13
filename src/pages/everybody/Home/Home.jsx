@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import LetsCreate from '@components/home/LetsCreate';
 import SimpleAbout from '@components/home/SimpleAbout';
-import DevelopedProjects from '@components/home/DevelopedProjectList';
 import { gsap } from 'gsap';
 import { BsArrowDownRight } from 'react-icons/bs';
 import { ScrollTrigger } from 'gsap/all';
@@ -74,7 +73,6 @@ const HomePage = () => {
             </section>
 
             <SimpleAbout />
-            <DevelopedProjects />
             <LetsCreate />
         </main>
     );
