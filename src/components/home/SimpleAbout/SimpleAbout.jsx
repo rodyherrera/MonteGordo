@@ -42,10 +42,10 @@ const SimpleAbout = () => {
         <section className='Simple-About-Container'>
             <article className='Simple-About-Left-Container'>
                 <SocialMedia />
-                <p className='Simple-About-Left' ref={leftRef}>Boosting brands in the digital age. Let's shake things up and redefine the game. No tricks, always staying ahead, period.</p>
+                <p className='Simple-About-Left' ref={leftRef}>Boosting brands in the digital age. Passionate about creating memorable digital experiences and redefining the rules of the game.</p>
             </article>
             <article className='Simple-About-Right-Container'>
-                <p className='Simple-About-Right' ref={rightRef}>Always looking for something new to do, always moving and learning new things. Drawing attention through technology. 🚀✨</p>
+                <p className='Simple-About-Right' ref={rightRef}>Self-taught, always looking for something new to do. Transforming what was once a figment of my imagination into something real. 🚀✨</p>
             </article>
         </section>
     );
