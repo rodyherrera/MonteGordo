@@ -38,6 +38,8 @@
         flex-direction: column;
         height: 35rem;
         padding: 1.5rem;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
     }
 
     .Simple-About-Left{
