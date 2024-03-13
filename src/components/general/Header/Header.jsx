@@ -27,7 +27,11 @@ const Header = () => {
             duration: 0.8,
             opacity: 1,
             y: 0,
-            stagger: 0.2,
+            // On mobile devices, not all links in the header are 
+            // displayed. The stagger causes the links that are displayed 
+            // to be displayed with even more delay. Therefore we 
+            // simply disable this (for now).
+            stagger: (window.innerHeight <= 768) ? (0) : (0.2),
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: '.Header-Container',
