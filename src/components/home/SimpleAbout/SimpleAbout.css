@@ -6,6 +6,8 @@
     overflow-x: hidden;
     padding: 0 2.5rem;
     gap: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 
 .Simple-About-Left-Container,
